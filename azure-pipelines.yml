@@ -19,6 +19,9 @@ steps:
   inputs:
     verbose: false
 
+- script: 'ls -lah && pwd'
+  displayName: 'Listing dir and checking dir location'
+
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
 
